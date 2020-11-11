@@ -50,7 +50,7 @@ class Graph:
         if current_node is not visited: 
             visited.add(current_node)
 
-            neighbors = self.current_node()
+            neighbors = self.get_neighbors(current_node)
             for neighbor in neighbors:
                 q.enqueue(neighbors)
 
@@ -60,7 +60,20 @@ class Graph:
         Print each vertex in depth-first order
         beginning from starting_vertex.
         """
-        pass  # TODO
+        s = Stack()
+        visited = set()
+        s.push(starting_vertex)
+
+        while s.size() > 0: 
+            current_node = s.pop()
+
+        if current_node is not visited: 
+            visited.add(current_node)
+
+            neighbors = self.get_neighbors(current_node)
+            for neighbor in neighbors:
+                s.push(neighbors)
+
 
     def dft_recursive(self, starting_vertex):
         """
