@@ -85,6 +85,11 @@ neighbors = set("E")
 
 # TIME COMPLEXITY
 ### how many times did we visit every vertex? visit every edge once
-## O(n+m)
+## O( n + m )
 ## O(node + edge)
 ## so linear
+
+# DFT VS BFT 
+## same time complexity each just as fast
+## DFT can be done recursively 
+## BFT can find shortest path
